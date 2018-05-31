@@ -1,0 +1,271 @@
+/*Assignment Name: Template
+File Name: style.css
+Date: 4/29/18
+Programmer: Alexandra Nitsche
+*/
+
+
+/* All sizes CSS*/
+
+header {
+    background: #913A3A;
+}
+
+/* Navigation*/
+    
+    /* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #D4B9AD;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+} 
+
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} 
+body {
+    margin: 0;
+    font-family: Arial, Helventica, sans-serif;
+    background: #E5D69F;
+    color: #ffffff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #D4B9AD;
+    color: white;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid #D0B090;
+    margin: .5em 0;
+}
+
+
+footer {
+    background: #D4B9AD;
+    min-height: 150px;
+}
+
+
+/* Header Details*/
+
+#hero {
+    min-height: 400px;
+}
+
+#hero h1 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+#hero .content-wrap {
+    padding: 0 1.5em;
+}
+
+
+/* Section- A*/
+
+#section-a {
+    color: #333;
+    padding-bottom: 2em;
+}
+
+#section-a .content-wrap {
+    padding: 0 1.5em;
+}
+
+
+/* Section- B*/
+
+#section-b {
+    padding: 2em 1em 1em;
+}
+
+#section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#section-b li {
+    margin-bottom: 1em;
+    background: white;
+    color: #333;
+}
+
+.action-content {
+    padding: 1.5em;
+}
+
+
+/* Section- c*/
+
+#section-c {
+    color: #333;
+    padding: 2em;
+}
+
+
+/* contact-section */
+
+#contact-section .box {
+    padding: 2em;
+    color: white;
+}
+
+#contact-section .box:first-child {
+    background: #913A3A;
+}
+
+#contact-section .box:nth-child(2) {
+    background: white;
+    color: #333;
+}
+
+#main-footer {
+    padding: 2em;
+    color: #333;
+    text-align: center;
+}
+
+/* Media Queries- this will only take affect in screen sizes larger than 700px */
+
+@media(min-width: 600px) {
+    
+   .grid { 
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em))
+            1fr;
+    }
+    
+    #section-a .content-text { 
+        columns: 2; 
+        column-gap: 2em;
+    }
+    
+    #section-a .content-text p { 
+        padding-top: 0;
+    }
+    
+    .content-wrap, #section-b ul {
+        grid-column: 2/4;
+    }
+    
+    .box, #footer div {
+        grid-column: span 2;
+    }
+    
+    #section-b ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #section-b li { 
+        width: 31%;
+
+    }
+    
+     /* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #D4B9AD;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+} 
+    
+    
+}
